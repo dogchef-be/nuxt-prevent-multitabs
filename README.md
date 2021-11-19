@@ -13,7 +13,6 @@
 
 - [Setup](#setup)
 - [Options](#options)
-- [Usage](#usage)
 - [License](#license)
 
 ## Setup
@@ -25,6 +24,8 @@ npm install nuxt-prevent-multitabs
 ```
 
 2. Create the layout to be used when the client opens another tab. An example:
+
+<img width="379" alt="image" src="https://user-images.githubusercontent.com/8303937/142630659-b2f6a268-9cf1-4055-bb8e-dd6d1a3d3aa3.png">
 
 ```html
 <template>
