@@ -2,7 +2,7 @@
   nuxt-prevent-multitab
 </h1>
 <p align="center">
-  NuxtJS module to prevent client to use multiple tabs
+  NuxtJS module to prevent opening the app in multiple tabs
 </p>
 
 <p align="center">
