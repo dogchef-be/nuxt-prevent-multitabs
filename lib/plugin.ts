@@ -3,7 +3,7 @@ import { v1 as uuidv1 } from 'uuid'
 
 let init = false
 
-const preventMultitabPlugin: Plugin = (): void => {
+const preventMultitabsPlugin: Plugin = (): void => {
   if (!init && localStorage) {
     init = true
 
@@ -35,4 +35,4 @@ const preventMultitabPlugin: Plugin = (): void => {
   }
 }
 
-export default preventMultitabPlugin
+export default preventMultitabsPlugin
