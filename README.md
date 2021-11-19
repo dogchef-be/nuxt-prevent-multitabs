@@ -66,7 +66,7 @@ export default {
   // ...other config options
   modules: ["nuxt-prevent-multitabs"];
   preventMultitabs: {
-    layout: 'multitab', // optional. default is multitab.vue
+    layout: 'multitab', // optional
   }
 }
 ```
@@ -79,3 +79,7 @@ export default {
 - Default: `multitab`
 
 The layout to be used when the client opens another tab
+
+## License
+
+See the LICENSE file for license rights and limitations (MIT).
