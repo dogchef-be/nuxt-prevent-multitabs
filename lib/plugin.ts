@@ -11,7 +11,10 @@ const preventMultitabsPlugin: Plugin = (): void => {
     localStorage.open = uuid
 
     addEventListener('unload', () => {
-      if (window.$nuxt.$data.layoutName !== '<%= options.layout %>') {
+      if (
+        window.$nuxt &&
+        window.$nuxt.$data.layoutName !== '<%= options.layout %>'
+      ) {
         localStorage.removeItem('open')
       }
     })
@@ -25,7 +28,7 @@ const preventMultitabsPlugin: Plugin = (): void => {
     addEventListener('storage', (event: StorageEvent) => {
       // Prevent firing the event after the page is open (Safari < 14 fix)
       if (event.key === 'open' && event.newValue !== uuid) {
-        if (event.newValue) {
+        if (window.$nuxt && event.newValue) {
           window.$nuxt.setLayout('<%= options.layout %>')
         } else if (!document.hidden) {
           location.reload()
