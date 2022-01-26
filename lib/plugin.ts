@@ -20,7 +20,7 @@ const preventMultitabsPlugin: Plugin = (): void => {
     })
 
     document.addEventListener('visibilitychange', () => {
-      if (!document.hidden && !localStorage.open) {
+      if (document.visibilityState === 'visible' && !localStorage.open) {
         location.reload()
       }
     })
@@ -30,7 +30,7 @@ const preventMultitabsPlugin: Plugin = (): void => {
       if (event.key === 'open' && event.newValue !== uuid) {
         if (window.$nuxt && event.newValue) {
           window.$nuxt.setLayout('<%= options.layout %>')
-        } else if (!document.hidden) {
+        } else if (document.visibilityState === 'visible') {
           location.reload()
         }
       }

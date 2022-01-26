@@ -1,6 +1,6 @@
 {
   "name": "nuxt-prevent-multitabs",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "NuxtJS module to prevent opening the app in multiple tabs",
   "repository": "dogchef-be/nuxt-prevent-multitabs",
   "license": "MIT",
@@ -23,7 +23,7 @@
     "@nuxt/types": "^2.15.8",
     "@nuxt/typescript-build": "^2.1.0",
     "nuxt": "^2.15.8",
-    "typescript": "^4.5.4"
+    "typescript": "^4.5.5"
   },
   "publishConfig": {
     "access": "public"
