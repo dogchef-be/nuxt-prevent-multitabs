@@ -3,6 +3,8 @@ const minorUpdatesOnly = [
   '@nuxt/typescript-build',
   'nuxt',
   'typescript',
+  '@types/uuid',
+  'uuid',
 ]
 
 module.exports = {
