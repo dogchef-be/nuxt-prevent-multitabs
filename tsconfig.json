@@ -15,7 +15,7 @@
       "~/*": ["./*"]
     },
     "outDir": "dist",
-    "types": ["@nuxt/types", "@types/uuid"]
+    "types": ["@nuxt/types"]
   },
   "exclude": ["node_modules"],
   "include": ["lib"]
